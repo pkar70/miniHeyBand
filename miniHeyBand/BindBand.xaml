@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="miniHeyBand.BindBand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="uiPage_Loaded" Unloaded="uiPage_Unloaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Uid="resBindingTitle"  Text="Binding bracelet" FontSize="18" HorizontalAlignment="Center" Margin="10,10,10,10" />
+
+        <Button Content="Bind" Grid.Row="2" HorizontalAlignment="Center" Margin="0,15,0,5" Click="uiBind_Click" />
+
+        <ListView x:Name="ListaItems" Grid.Row="1"  Margin="5,5,5,5" HorizontalContentAlignment="Stretch"  >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment"  Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid HorizontalAlignment="Stretch" Margin="0,5,0,0" Background="{Binding KolorBg, Mode=OneWay }" Tapped="uiItem_Tapped"  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <RadioButton IsChecked="{Binding isSelected, Mode=OneWay }"  Grid.RowSpan="2"/>
+                        
+                        <TextBlock FontSize="20" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Nazwa, Mode=OneWay }"  />
+
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Adres, Mode=OneWay }"  />
+                        <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding RSSI, Mode=OneWay }"  />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <ListView.GroupStyle >
+                <GroupStyle HidesIfEmpty="True" >
+                    <GroupStyle.HeaderContainerStyle>
+                        <Style TargetType="ListViewHeaderItem">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListViewHeaderItem">
+                                        <ContentPresenter HorizontalAlignment="Stretch"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.HeaderContainerStyle>
+
+                </GroupStyle>
+
+            </ListView.GroupStyle>
+        </ListView>
+
+    </Grid>
+
+    <Page.BottomAppBar>
+<CommandBar ClosedDisplayMode="Minimal" >
+            <AppBarToggleButton  Icon="SolidStar" x:Uid="resOnlyKnown" x:Name="uiShowHidden" Label="Only known"  />
+        </CommandBar>
+
+    </Page.BottomAppBar>
+
+    
+</Page>

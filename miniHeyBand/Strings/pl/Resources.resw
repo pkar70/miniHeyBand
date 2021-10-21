@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_lang" xml:space="preserve">
+    <value>polski</value>
+  </data>
+  <data name="errAnyError" xml:space="preserve">
+    <value>Wystąpił błąd</value>
+  </data>
+  <data name="errBTnoAvail" xml:space="preserve">
+    <value>BŁĄD: Bluetooth nie jest dostępny</value>
+  </data>
+  <data name="errBTnotEnabled" xml:space="preserve">
+    <value>BŁĄD: Bluetooth jest zablokowany</value>
+  </data>
+  <data name="errNoRoamFolder" xml:space="preserve">
+    <value>BŁĄD: nie ma folderu Roaming?</value>
+  </data>
+  <data name="errorNoContens" xml:space="preserve">
+    <value>BŁAD: pusty import?</value>
+  </data>
+  <data name="msgExportClip" xml:space="preserve">
+    <value>Lista została wyeksportowana do Schowka</value>
+  </data>
+  <data name="msgNoName" xml:space="preserve">
+    <value>(bez nazwy)</value>
+  </data>
+  <data name="resAskConfirm" xml:space="preserve">
+    <value>Na pewno?</value>
+  </data>
+  <data name="resDlgCancel" xml:space="preserve">
+    <value>Rezygnuję</value>
+  </data>
+  <data name="resDlgContinue" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="resDlgNo" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="resDlgYes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="resNazwaListy" xml:space="preserve">
+    <value>Podaj nazwę listy:</value>
+  </data>
+  <data name="resSelect.Label" xml:space="preserve">
+    <value>Zaznaczanie</value>
+  </data>
+  <data name="resSelectAll.Text" xml:space="preserve">
+    <value>Wszystko</value>
+  </data>
+  <data name="resSelectNone.Text" xml:space="preserve">
+    <value>Nic</value>
+  </data>
+  <data name="resLists.Label" xml:space="preserve">
+    <value>Listy</value>
+  </data>
+  <data name="resListsClear.Text" xml:space="preserve">
+    <value>Wyczyść</value>
+  </data>
+  <data name="resListsLoad.Text" xml:space="preserve">
+    <value>Wczytaj</value>
+  </data>
+  <data name="resListSave.Text" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="resListsImport.Text" xml:space="preserve">
+    <value>Importuj</value>
+  </data>
+  <data name="resListsExport.Text" xml:space="preserve">
+    <value>Eksportuj</value>
+  </data>
+  <data name="resListsTitle.Text" xml:space="preserve">
+    <value>Wczytywanie list</value>
+  </data>
+  <data name="resBindingTitle.Text" xml:space="preserve">
+    <value>Podpinanie bransoletki</value>
+  </data>
+  <data name="resOnlyKnown.Label" xml:space="preserve">
+    <value>Tylko znane</value>
+  </data>
+  <data name="resViewLogsTite.Text" xml:space="preserve">
+    <value>Podgląd logów</value>
+  </data>
+  <data name="resShowLog.Content" xml:space="preserve">
+    <value>Pokaż</value>
+  </data>
+  <data name="resSetClock.Text" xml:space="preserve">
+    <value>Ustawianie czasu</value>
+  </data>
+  <data name="resVibrate.Text" xml:space="preserve">
+    <value>Wibrowanie</value>
+  </data>
+  <data name="resCommonParams.Text" xml:space="preserve">
+    <value>Ustawienia wspólne</value>
+  </data>
+  <data name="resZdrowie.Text" xml:space="preserve">
+    <value>Zdrowie</value>
+  </data>
+  <data name="resWspolpraca.Text" xml:space="preserve">
+    <value>Współpraca</value>
+  </data>
+  <data name="resCommonTitle.Text" xml:space="preserve">
+    <value>Ustawienia wspólne</value>
+  </data>
+  <data name="resPowerSlider.Header" xml:space="preserve">
+    <value>Akumulator</value>
+  </data>
+  <data name="resFanWan.OffContent" xml:space="preserve">
+    <value>ignoruj podnoszenie ręki</value>
+  </data>
+  <data name="resFanWan.OnContent" xml:space="preserve">
+    <value>zaświecenie przy podnoszeniu</value>
+  </data>
+  <data name="resFanRight.OffContent" xml:space="preserve">
+    <value>zegarek na lewej ręce</value>
+  </data>
+  <data name="resFanRight.OnContent" xml:space="preserve">
+    <value>zegarek na prawej ręce</value>
+  </data>
+  <data name="resThumb.OffContent" xml:space="preserve">
+    <value>no needPalm</value>
+  </data>
+  <data name="resThumb.OnContent" xml:space="preserve">
+    <value>needPalm</value>
+  </data>
+  <data name="resTime1224.OffContent" xml:space="preserve">
+    <value>Zegar 12 godzinny</value>
+  </data>
+  <data name="resTime1224.OnContent" xml:space="preserve">
+    <value>Zegar 24 godzinny</value>
+  </data>
+  <data name="resImperialSI.OffContent" xml:space="preserve">
+    <value>imperial units</value>
+  </data>
+  <data name="resImperialSI.OnContent" xml:space="preserve">
+    <value>jednostki SI</value>
+  </data>
+  <data name="resScreensaver.Header" xml:space="preserve">
+    <value>gaszenie ekranu po sekundach</value>
+  </data>
+  <data name="resBrightness.Header" xml:space="preserve">
+    <value>jasność ekranu</value>
+  </data>
+  <data name="resSave.Content" xml:space="preserve">
+    <value>Ustaw!</value>
+  </data>
+  <data name="resSetTimeTitle.Text" xml:space="preserve">
+    <value>Ustawianie czasu zegarka</value>
+  </data>
+  <data name="resSetCurrent.Content" xml:space="preserve">
+    <value>Czas aktualny</value>
+  </data>
+  <data name="resLub.Text" xml:space="preserve">
+    <value>lub</value>
+  </data>
+  <data name="resDzien.Header" xml:space="preserve">
+    <value>Dzień</value>
+  </data>
+  <data name="resGodzina.Header" xml:space="preserve">
+    <value>Godzina</value>
+  </data>
+  <data name="resSetGiven.Content" xml:space="preserve">
+    <value>Czas podany</value>
+  </data>
+  <data name="resWspolpracaTitle.Text" xml:space="preserve">
+    <value>Współpraca z zegarkiem</value>
+  </data>
+  <data name="resSyncClock.Text" xml:space="preserve">
+    <value>Synchronizacja zegara (codziennie)</value>
+  </data>
+  <data name="resAutoMesasure.Text" xml:space="preserve">
+    <value>Auto pomiar co minut</value>
+  </data>
+  <data name="resAutoTetno.Text" xml:space="preserve">
+    <value>Auto pomiar tetna</value>
+  </data>
+  <data name="resBuzzer.Text" xml:space="preserve">
+    <value>Brzęczyk przed pomiarem</value>
+  </data>
+  <data name="resOdGodz.Header" xml:space="preserve">
+    <value>od godziny</value>
+  </data>
+  <data name="resDoGodz.Header" xml:space="preserve">
+    <value>do godziny</value>
+  </data>
+  <data name="resZdrowieTitle.Text" xml:space="preserve">
+    <value>Dane zdrowotne</value>
+  </data>
+  <data name="resStartPulse.Text" xml:space="preserve">
+    <value>Mierzenie tętna (runtime)</value>
+  </data>
+  <data name="resBind.Label" xml:space="preserve">
+    <value>Połącz</value>
+  </data>
+  <data name="resLogs.Label" xml:space="preserve">
+    <value>Podgląd logów</value>
+  </data>
+  <data name="resAutoSave.Label" xml:space="preserve">
+    <value>Autosave</value>
+  </data>
+  <data name="resAutoSaveTitle.Text" xml:space="preserve">
+    <value>Auto zapisywanie danych</value>
+  </data>
+  <data name="resSaveSteps.Header" xml:space="preserve">
+    <value>Kroki</value>
+  </data>
+  <data name="resSaveSen.Header" xml:space="preserve">
+    <value>Sen</value>
+  </data>
+  <data name="errorNotBinded" xml:space="preserve">
+    <value>Najpierw połącz z urządzeniem!</value>
+  </data>
+</root>

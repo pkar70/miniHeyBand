@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="miniHeyBand.SetDeviceGlobalParam"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="uiPage_Loaded">
+
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock x:Uid="resCommonTitle" Text="Common parameters" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Slider x:Name="uiPower" x:Uid="resPowerSlider" Header="Power" Minimum="0" Maximum="100" SmallChange="1" IsEnabled="False" Visibility="Collapsed" />
+            <ToggleSwitch x:Uid="resFanWan" x:Name="uiFanWanOnOff" OnContent="zaświecenie przy podnoszeniu" OffContent="ignoruj podnoszenie ręki" Visibility="Collapsed"/>
+            <ToggleSwitch x:Uid="resFanRight" x:Name="uiFanWanRight" OnContent="zegarek na prawej ręce" OffContent="zegarek na lewej ręce" Visibility="Collapsed"/>
+<!--            <ToggleSwitch x:Uid="resThumb" x:Name="uiFanWanThumb" OnContent="needPalm" OffContent="no needPalm" IsEnabled="False" Visibility="Collapsed" /> -->
+            <ToggleSwitch x:Uid="resTime1224" x:Name="uiTime1224" OnContent="24 hours clock" OffContent="12 hours clock" Margin="0,15,0,0" Visibility="Collapsed" />
+            <ToggleSwitch x:Uid="resImperialSI" x:Name="uiImperialSI" OnContent="SI units" OffContent="imperial units" Visibility="Collapsed"  />
+            <Slider x:Uid="resScreensaver" x:Name="uiScreenSaver" Header="gaszenie ekranu po sekundach" Minimum="4" Maximum="15" SmallChange="1" Visibility="Collapsed" />
+            <Slider x:Uid="resBrightness" x:Name="uiBrightness" Header="jasność ekranu" Minimum="0" Maximum="9" SmallChange="1" Visibility="Collapsed"/>
+            <Button x:Uid="resSave" x:Name="uiOk" Content="Save!" HorizontalAlignment="Center" Margin="10,10,10,5" Click="uiFanWan_Clicked" Visibility="Collapsed" />
+        </StackPanel>
+    </Grid>
+</Page>

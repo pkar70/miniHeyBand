@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="miniHeyBand.LogViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition  />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="10,5,10,5" Grid.Row="0">
+            <TextBlock HorizontalAlignment="Center" x:Uid="resViewLogsTite" FontSize="18" Text="View logs" />
+            <ComboBox x:Name="uiLogName" Margin="0,10,0,0"/>
+            <Slider Minimum="0" Maximum="2" HorizontalAlignment="Stretch" x:Name="uiLogLevel" />
+            <Button Content="Show" x:Uid="resShowLog" Click="Button_Click" />
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.Row="1" x:Name="uiScroll">
+            <TextBlock x:Name="uiLogView" Margin="10,10,10,10"  />
+        </ScrollViewer>
+        <Button Grid.Row="2" x:Name="uiClear" Content="Clear" Click="uiClear_Click" Margin="10,10,10,15" />
+    </Grid>
+</Page>

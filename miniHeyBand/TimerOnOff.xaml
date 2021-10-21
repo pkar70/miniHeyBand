@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="miniHeyBand.TimerOnOff"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock x:Uid="resAutoSaveTitle" FontSize="18" HorizontalAlignment="Center" Text="Auto zapisywanie danych" Margin="0,0,0,10"/>
+            <ToggleSwitch x:Uid="resSaveSteps" Header="Steps" x:Name="uiSteps"/>
+            <ToggleSwitch x:Uid="resSaveSen" Header="Sen" x:Name="uiSleep"/>
+            <Button x:Uid="resSave" HorizontalAlignment="Center" Content="Set!" Margin="0,15,0,0" Click="uiSet_Click" />
+        </StackPanel>
+    </Grid>
+</Page>

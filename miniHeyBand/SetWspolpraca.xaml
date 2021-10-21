@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="miniHeyBand.SetWspolpraca"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel Margin="10,5,10,10">
+            <TextBlock x:Uid="resWspolpracaTitle" Text="Współpraca z zegarkiem" FontSize="18" HorizontalAlignment="Center" Margin="10,10,10,10" />
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+                <TextBlock x:Uid="resSyncClock" Grid.Row="0" Text="Sync clock (daily)"/>
+            <ToggleSwitch Grid.Row="0" Grid.Column="1" x:Name="uiSyncClock" />
+
+                <TextBlock x:Uid="resAutoMesasure" Grid.Row="1" Text="Auto pomiar co minut"/>
+            <ToggleSwitch Grid.Row="1" Grid.Column="1" x:Name="uiTimerTime" OffContent="30 min" OnContent="15 min"/>
+
+                <TextBlock Grid.Row="2" x:Uid="resAutoTetno" Text="Auto pomiar tetna"/>
+                <ToggleSwitch Grid.Row="2" Grid.Column="1"  x:Name="uiTimerTetno" />
+
+<!--                <TextBlock Grid.Row="3" Text="Powiadomienia SMS"/>
+                <ToggleSwitch Grid.Row="3" Grid.Column="1" x:Name="uiNotifySMS" /> -->
+
+                <TextBlock Grid.Row="4" x:Uid="resBuzzer" Text="Brzęczyk przed pomiarem"/>
+                <ToggleSwitch Grid.Row="4" Grid.Column="1" x:Name="uiNotifyPomiar" />
+            </Grid>
+
+            <Slider Header="od godziny" x:Uid="resOdGodz" Minimum="0" Maximum="23" StepFrequency="1" x:Name="uiNotifyBegin" />
+            <Slider Header="do godziny" x:Uid="resDoGodz" Minimum="0" Maximum="23" StepFrequency="1" x:Name="uiNotifyEnd" />
+            <Button x:Uid="resSave" HorizontalAlignment="Center" Margin="10,20,10,10" Content="Save!" Click="uiOk_Click" />
+            <StackPanel x:Name="uiWysylanieTekstow" Margin="10,20,10,10" Visibility="Collapsed" >
+                <TextBox x:Name="uiMsgType" Header="Typ (0-9)" Text="1" InputScope="Digits" Margin="10,20,10,0" />
+                <TextBox x:Name="uiMessage" Header="Tekst do wysłania" Text="" />
+                <Button Content="Send!" Click="uiSendMsg_Click" />
+            </StackPanel> 
+        </StackPanel>
+    </Grid>
+</Page>

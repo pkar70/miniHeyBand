@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="miniHeyBand.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:miniHeyBand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="uiPage_Loaded">
+
+    <Grid x:Name="uiGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10,5,10,10">
+            <TextBlock Text="mini Hey Band" HorizontalAlignment="Center" Margin="10,5,10,10" />
+            <TextBlock x:Name="uiHBappVers" Text="appvers" HorizontalAlignment="Center" />
+            <TextBlock x:Name="uiHBappWeb" Text="" HorizontalAlignment="Center" />
+            <TextBlock x:Name="uiUsingBand" Text="" HorizontalAlignment="Center"  />
+            <TextBlock Text="Set clock" x:Name="uiSetClock" x:Uid="resSetClock" Margin="10,10,10,10" Tapped="uiSetClock_Tapped" />
+            <TextBlock Text="Vibrate" x:Name="uiVibrate" x:Uid="resVibrate" Margin="10,10,10,10" Tapped="uiVibrate_Tapped"  />
+            <TextBlock Text="Common parames" x:Name="uiCommonParams" x:Uid="resCommonParams" Margin="10,10,10,10" Tapped="uiCommon_Tapped" />
+            <TextBlock Text="Zdrowie" x:Name="uiZdrowie" x:Uid="resZdrowie" Margin="10,10,10,10" Tapped="uiZdrowie_Tapped" />
+            <TextBlock Text="Wspolpraca" x:Name="uiWspolpraca" x:Uid="resWspolpraca" Margin="10,10,10,10" Tapped="uiWspolpraca_Tapped" />
+        </StackPanel>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Minimal" >
+            <AppBarButton x:Uid="resBind" Icon="MapDrive" Label="Connect" Click="uiBind_Click" />
+            <AppBarButton x:Uid="resLogs" Icon="Zoom" Label="View logs" Click="AppBarButton_Click" />
+            <AppBarButton x:Uid="resAutoSave" Icon="Clock" Label="Autosave" Click="uiClock_Click" />
+        </CommandBar>
+
+    </Page.BottomAppBar>
+
+</Page>
