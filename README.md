@@ -5,6 +5,6 @@
  Język polski: https://www.microsoft.com/pl-pl/p/h/9p3r1jq423xl
 
 # Privacy policy
- http://beskid.geo.uj.edu.pl/p/ms/hejband-privacy.htm
+ https://github.com/pkar70/miniHeyBand/wiki/Privacy-policy
 
  For history (in Polish), see MainPage.xaml.vb file.
